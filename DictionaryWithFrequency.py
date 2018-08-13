@@ -12,7 +12,5 @@ for i in s:
             count += 1
         d[i] = count
 
-print(d)
-    
-        
-    
+for w in sorted(d, key=d.get, reverse=True):
+  print( w,':',"'", d[w],"'")
